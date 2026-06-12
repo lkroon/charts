@@ -1,0 +1,28 @@
+imageRegistry: ghcr.io/lkroon
+# Bumped by the frameworks release workflow on every tag
+imageTag: v0.1.0
+
+db:
+  # Dev-grade credentials; move to sealed-secrets/SOPS before a public deploy
+  user: app
+  password: app
+  database: appdb
+  storage: 1Gi
+
+# Origin whose /auth/google/callback is registered with Google
+googleAuthOrigin: http://localhost
+
+ingress:
+  className: nginx
+  hosts:
+    fastapi: fastapi.localtest.me
+    pyramid: pyramid.localtest.me
+    base: base.localtest.me
+  # Extra hosts routed to fastapi (Google OAuth needs localhost locally)
+  fastapiExtraHosts:
+    - localhost
+
+hpa:
+  minReplicas: 1
+  maxReplicas: 5
+  cpuUtilization: 60
