@@ -1,6 +1,6 @@
 imageRegistry: ghcr.io/lkroon
 # Bumped by the frameworks release workflow on every tag
-imageTag: v0.2.0
+imageTag: v0.2.1
 
 db:
   # Dev-grade credentials; move to sealed-secrets/SOPS before a public deploy
