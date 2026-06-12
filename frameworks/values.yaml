@@ -16,8 +16,6 @@ ingress:
   className: nginx
   hosts:
     fastapi: fastapi.localtest.me
-    # pyramid: pyramid.localtest.me
-    # base: base.localtest.me
   # Extra hosts routed to fastapi (Google OAuth needs localhost locally)
   fastapiExtraHosts:
     - localhost
