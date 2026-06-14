@@ -3,4 +3,4 @@ name: frameworks
 description: Postgres + three Python web apps (fastapi/pyramid/base) from lkroon/frameworks
 type: application
 version: 0.1.0
-appVersion: "v0.2.2"
+appVersion: "v0.2.3"
