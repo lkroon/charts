@@ -5,7 +5,7 @@ metadata:
 spec:
   # replicas intentionally omitted: the HPA owns the count, and the app's
   # dashboard slider patches the scale subresource
-  revisionHistoryLimit: 3
+  revisionHistoryLimit: 1
   selector:
     matchLabels:
       app: fastapi
