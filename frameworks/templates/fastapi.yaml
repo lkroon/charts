@@ -14,6 +14,7 @@ spec:
         app: fastapi
     spec:
       serviceAccountName: fastapi
+      revisionHistoryLimit: 3
       containers:
         - name: fastapi
           image: {{ .Values.imageRegistry }}/frameworks-fastapi:{{ .Values.imageTag }}
