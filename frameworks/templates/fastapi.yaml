@@ -79,7 +79,7 @@ metadata:
   name: fastapi
 spec:
   selector:
-    app: fastapitest
+    app: fastapi
   ports:
     - name: http
       port: 80
